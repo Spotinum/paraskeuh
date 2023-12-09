@@ -4,23 +4,27 @@
  */
 package com.mycompany.calendar;
 
+import java.time.LocalDateTime;
+
 /**
  *
  * @author giannis
  */
 public class Apointment {
-    private String dateStart;
-    private String dateEnd;
+    private LocalDateTime dateStart;
+    private LocalDateTime dateEnd;
     private String desc;
     private String summary;
 
-    public String getDateStart() {
+    public LocalDateTime getDateStart() {
         return dateStart;
     }
 
-    public String getDateEnd() {
+    public LocalDateTime getDateEnd() {
         return dateEnd;
     }
+
+   
 
     public String getDesc() {
         return desc;
@@ -30,11 +34,11 @@ public class Apointment {
         return summary;
     }
 
-    public void setDateStart(String dateStart) {
+    public void setDateStart(LocalDateTime dateStart) {
         this.dateStart = dateStart;
     }
 
-    public void setDateEnd(String dateEnd) {
+    public void setDateEnd(LocalDateTime dateEnd) {
         this.dateEnd = dateEnd;
     }
 
@@ -46,7 +50,7 @@ public class Apointment {
         this.summary = summary;
     }
 
-    public Apointment(String dateStart, String dateEnd, String desc, String summary) {
+    public Apointment(LocalDateTime dateStart, LocalDateTime dateEnd, String desc, String summary) {
         this.dateStart = dateStart;
         this.dateEnd = dateEnd;
         this.desc = desc;
